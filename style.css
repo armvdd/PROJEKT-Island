@@ -180,7 +180,7 @@ footer a{
 		position: relative;
 	}
 
-	.uvod .title, .proc .title, .co .title{
+	.uvod .title, .proc .title, .co .title, .foto--uvod .title{
 		color: #ffffff;
 		font-size: 14px;
 		position: absolute;
@@ -189,7 +189,7 @@ footer a{
 		padding: 20px 10px;
 	}
 
-	.uvod .title a, .proc .title a, .co .title a{
+	.uvod .title a, .proc .title a, .co .title a, .foto--uvod .title a{
 		color: #ffffff;
 		font-size: 14px;
 	}
@@ -232,4 +232,83 @@ footer a{
 	}
 	}
 
-	
+/* PC */	
+
+@media screen and (min-width: 960px){
+	.kontejner{
+		width: 950px;
+		margin: -50px auto;
+		padding-bottom: 0;
+	}
+
+	.fotky{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	header{
+		height: 650px;
+		font-size: 25px;
+		padding: 0 250px;
+	}
+
+	header h1{
+		font-size: 90px;
+	}
+
+	.uvod-menu{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.menu{
+		flex-direction: column;
+		border: none;
+		height: 50%;
+		margin-top: 20px;
+		flex: 0 1 20%;
+	}
+
+	.uvod{
+		flex: 1 1 45%;
+		padding-right: 25px;
+		margin-bottom: 25px;
+	}
+
+	.foto--uvod{
+		flex: 1 1 100%;
+	}
+	.menu a{
+		text-align: left;
+		font-size: 15px;
+		border-bottom: rgb(238, 238, 238) solid 1px;
+	}
+
+	h2::after{
+		width: 80px;
+		height: 4px;
+	}
+
+	.proc p{
+		padding-right: 250px;
+		padding-left: 60px;
+	}
+
+	.proc h2{
+		padding-left: 60px;
+	}
+
+	.co p, .co h2 {
+		padding-left: 250px;
+		padding-right: 60px;
+	}
+
+	.co h2::after{
+		left: 210px;
+	}
+
+	footer{
+		margin-left: 17%;
+		margin-top: 50px;
+		font-weight: bold;
+	}
+}
